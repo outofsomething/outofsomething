@@ -32,3 +32,47 @@ body {
 body, h1, h2, p {
     color: @black;
 }
+
+.logo-container {
+    margin-bottom: 35px;
+    img#logo { max-width: 100%; }
+    a#home { border-bottom: none; text-decoration: none; }
+}
+
+.tagline-container {
+    margin-bottom: 85px;
+    h1.tagline, h2.tagline {
+        font-size: 24px;
+        margin: 0 0.5em 0.5em 0.5em;
+        line-height: 1.25em;
+        letter-spacing: 0.14em;
+        .caps;
+        a { white-space: nowrap; }
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    a.contact { text-decoration: none; border-bottom: none; }
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    .caps;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .tagline-container {
+        .clean-break { display: block; }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tagline-container {
+        h1.tagline, h2.tagline {
+            font-size: 18px;
+        }
+    }
+}
