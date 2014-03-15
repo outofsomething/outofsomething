@@ -3,6 +3,7 @@
 # run with the command 'rackup'
 require 'sinatra/base'
 require 'sinatra/assetpack'
+require 'less'
 
 class OutOfSomething < Sinatra::Base
   set :root, File.dirname(__FILE__) # You must set app root

@@ -1,0 +1,34 @@
+@black: #666;
+@gray: #d8d4c8;
+@beige: #f0ede3;
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('/fonts/ProximaNova-Light.otf');
+}
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('/fonts/ProximaNova-Bold.otf');
+    font-weight: bold;
+}
+.sans {
+    font-family: 'proxima-nova', 'Verdana', "Bitstream Vera Sans", sans-serif;
+}
+.caps { text-transform: uppercase; }
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid @gray;
+    &, &:visited { color: @black; }
+    &:hover { color: darken(@black, 5%); }
+}
+
+body {
+    background-color: @beige;
+    margin-top: 60px;
+    .sans;
+    overflow-x: hidden; //sometimes the vertical scroll bar works strangely with skeleton
+}
+body, h1, h2, p {
+    color: @black;
+}
