@@ -82,10 +82,12 @@ body, h1, h2, p {
     margin-bottom: 50px;
 }
 
+.clean-break, .no-wrap { 
+    white-space: nowrap;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .tagline-container {
-        .clean-break { display: block; }
-    }
+    .clean-break { display: block; }
 }
 @media only screen and (max-width: 767px) {
     .tagline-container {

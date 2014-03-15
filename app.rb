@@ -47,7 +47,7 @@ class OutOfSomething < Sinatra::Base
           href: "ootheloop.com",
           hero: "out-of-the-loop-hero.png",
           wordmark: "out-of-the-loop-wordmark.svg",
-          tagline: "Simple facts about the greatest city on Earth." },
+          tagline: 'Simple facts about <span style="no-wrap;">the greatest city on Earth.</span>' },
       ]
     erb :index, :locals => {projects: @projects}
   end
