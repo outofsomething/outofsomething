@@ -37,6 +37,18 @@ class OutOfSomething < Sinatra::Base
   }
 
   get '/' do
-    erb :index, :locals => {}
+    @projects = [
+        { slug: "out-of-pages",
+          href: "outofpages.com",
+          hero: "out-of-pages-hero.png",
+          wordmark: "out-of-pages-wordmark.svg",
+          tagline: "Subscriptions to notebooks for people who like to think on paper." },
+        { slug: "out-of-the-loop",
+          href: "ootheloop.com",
+          hero: "out-of-the-loop-hero.png",
+          wordmark: "out-of-the-loop-wordmark.svg",
+          tagline: "Simple facts about the greatest city on Earth." },
+      ]
+    erb :index, :locals => {projects: @projects}
   end
 end

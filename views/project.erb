@@ -1,0 +1,18 @@
+<a target="blank" title="<%= project[:href] %>" href="//<%= project[:href] %>">
+<div class="project" id="<%= project[:slug] %>">
+
+    <div class="row">
+        <img src="/images/<%= project[:hero] %>" class="hero img-circle" />
+    </div>
+
+    <div class="row">
+        <img src="/images/<%= project[:wordmark] %>" class="wordmark" />
+    </div>
+
+    <div class="row">
+        <div class="tagline">
+            <p><%= project[:tagline] %></p>
+        </div>
+    </div>
+</div>
+</a>
